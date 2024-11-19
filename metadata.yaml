@@ -1,5 +1,5 @@
 homepage: "https://permate.com"
 documentation: "https://github.com/PmHubDev/pm-conversion-tag-google-tag-manager"
 versions:
-  - sha: 5b153c8fce54809c831375df6e708ec87e793918
+  - sha: e044560ce2bb5219418441f3b0902f864fc1707f
     changeNotes: Initial release.
