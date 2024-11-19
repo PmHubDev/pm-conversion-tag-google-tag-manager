@@ -77,6 +77,7 @@ const getCookieValues = require('getCookieValues');
 const appendPixel = require('sendPixel');
 const encodeUriComponent = require('encodeUriComponent');
 const getUrl = require('getUrl');
+const JSON = require('JSON');
 const version = '1.0.0';
 const copyFromWindow = require('copyFromWindow');
 const existingPermateObject = copyFromWindow('PERMATE'); 
@@ -101,7 +102,7 @@ if (data.clickId != null) {
   PERMATE.Conversion.click_uuid = enc(data.clickId);
 }
 else {
-  PERMATE.Conversion.click_uuid = getCookieValues('pm_click');
+  PERMATE.Conversion.click_uuid = JSON.parse(getCookieValues('pm_click').pop()).click;
 }
 
 window('PERMATE', PERMATE, true);
