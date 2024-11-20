@@ -109,7 +109,7 @@ window('PERMATE', PERMATE, true);
 
 var buildNs = function() {
     //build the URL: 
-    var url = "https://pmcloud1.com/postback/browser?offer_id=" + enc(data.offerId) + "&sale_value=" + PERMATE.Conversion.Sale.saleValue + "&event_id=" + PERMATE.Conversion.Sale.eventId + "&sub1_adv=" + enc(data.sub1) + "&sub5_adv=" + PERMATE.Conversion.Sale.version + "&click_uuid=" + PERMATE.Conversion.click_uuid + "&origin=" + getUrl('host');
+    var url = "https://qa.pmdevtk.com/postback/browser?offer_id=" + enc(data.offerId) + "&sale_value=" + PERMATE.Conversion.Sale.saleValue + "&event_id=" + PERMATE.Conversion.Sale.eventId + "&sub1_adv=" + enc(data.sub1) + "&sub5_adv=" + PERMATE.Conversion.Sale.version + "&click_uuid=" + PERMATE.Conversion.click_uuid + "&origin=" + getUrl('host');
     if (PERMATE.Conversion.Sale.isVND) {
       url += "&currency=vnd";
     }
